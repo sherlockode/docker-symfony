@@ -27,6 +27,7 @@ RUN apk add --update \
     php7-zlib \
     php7-phar \
     php7-tokenizer \
+    php7-fileinfo \
     make \
     curl
 
