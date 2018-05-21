@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-LABEL maintainer="Vincent Composieux <vincent.composieux@gmail.com>"
+LABEL maintainer="Sherlockode <contact@sherlockode.fr>"
 
 RUN apk add --update \
     php7-fpm \
@@ -28,6 +28,7 @@ RUN apk add --update \
     php7-phar \
     php7-tokenizer \
     php7-fileinfo \
+    php7-xdebug \
     make \
     curl
 
@@ -37,6 +38,7 @@ RUN curl --insecure https://getcomposer.org/composer.phar -o /usr/bin/composer &
 
 ADD symfony.ini /etc/php7/php-fpm.d/
 ADD symfony.ini /etc/php7/cli/conf.d/
+ADD xdebug.ini /etc/php7/conf.d/xdebug.ini
 
 ADD symfony.pool.conf /etc/php7/php-fpm.d/
 
