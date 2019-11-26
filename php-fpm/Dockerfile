@@ -24,6 +24,7 @@ RUN apk add --update \
     php7-session \
     php7-simplexml \
     php7-xml \
+    php7-xmlreader \
     php7-xmlwriter \
     php7-zlib \
     php7-phar \
