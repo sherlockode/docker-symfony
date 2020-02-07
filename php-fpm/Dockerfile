@@ -39,7 +39,7 @@ RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 
 RUN curl --insecure https://getcomposer.org/installer | php && mv composer.phar /usr/bin/composer && chmod +x /usr/bin/composer
 
-ADD symfony.ini /etc/php7/php-fpm.d/
+ADD symfony.ini /etc/php7/conf.d.d/
 ADD symfony.ini /etc/php7/cli/conf.d/
 ADD xdebug.ini /etc/php7/conf.d/xdebug.ini
 
