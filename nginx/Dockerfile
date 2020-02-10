@@ -1,9 +1,8 @@
-FROM alpine:3.8
+FROM alpine:3.10
 
 LABEL maintainer="Sherlockode <contact@sherlockode.fr>"
 
-RUN apk add --update nginx
-RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
+RUN apk add --no-cache --update nginx
 
 ADD nginx.conf /etc/nginx/
 ADD symfony.conf /etc/nginx/conf.d/default.conf
