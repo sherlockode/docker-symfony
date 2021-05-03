@@ -21,6 +21,7 @@ RUN apk add --update \
     php7-pdo \
     php7-pdo_mysql \
     php7-mysqli \
+    php7-redis \
     php7-session \
     php7-simplexml \
     php7-xml \
