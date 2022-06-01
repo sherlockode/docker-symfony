@@ -1,4 +1,4 @@
-Docker for Symfony and PHP 7
-============================
+Docker for Symfony and PHP
+==========================
 
 See docker-compose.yml file for usage

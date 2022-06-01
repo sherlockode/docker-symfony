@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
     db:
         image: mysql
@@ -12,20 +12,16 @@ services:
         volumes:
             - ~/mysql_myproject:/var/lib/mysql
     php:
-        image: sherlockode/symfony_php-fpm:7.1
+        image: sherlockode/symfony_php-fpm:8.1
         expose:
             - "9000"
         volumes:
             - .:/var/www/symfony
             - ./logs/symfony:/var/www/symfony/var/log
-        links:
-            - db
     nginx:
         image: sherlockode/symfony_nginx
         ports:
             - "16080:80"
-        links:
-            - php
         volumes_from:
             - php
         volumes:
