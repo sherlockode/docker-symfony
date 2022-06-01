@@ -41,9 +41,7 @@ RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 
 RUN ln -s /usr/bin/php81 /usr/bin/php
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-RUN composer self-update
+RUN curl --insecure https://getcomposer.org/installer | php && mv composer.phar /usr/bin/composer && chmod +x /usr/bin/composer
 
 ADD symfony.ini /etc/php81/conf.d/
 ADD symfony.ini /etc/php81/cli/conf.d/
