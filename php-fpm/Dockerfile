@@ -4,7 +4,7 @@ LABEL maintainer="Sherlockode <contact@sherlockode.fr>"
 
 RUN apk add --update \
     php81-fpm \
-    php8-apcu \
+    php81-apcu \
     php81-calendar \
     php81-ctype \
     php81-curl \
@@ -12,7 +12,7 @@ RUN apk add --update \
     php81-gd \
     php81-iconv \
     php81-pecl-imagick \
-    php8-json \
+    php81-json \
     php81-intl \
     php8-pecl-mcrypt \
     php81-mbstring \
@@ -21,14 +21,13 @@ RUN apk add --update \
     php81-pdo \
     php81-pdo_mysql \
     php81-mysqli \
-    php8-redis \
+    php81-redis \
     php81-soap \
     php81-session \
     php81-simplexml \
     php81-xml \
     php81-xmlreader \
     php81-xmlwriter \
-    php8-zlib \
     php81-phar \
     php81-tokenizer \
     php81-fileinfo \
