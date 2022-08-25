@@ -33,6 +33,8 @@ RUN apk add --update \
     php81-fileinfo \
     php81-pecl-xdebug \
     php81-zip \
+    icu \
+    icu-data-full \
     make \
     curl
 
